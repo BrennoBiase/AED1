@@ -56,14 +56,12 @@ class NodoArvore:
     return busca(raiz.esquerda, chave)
             
  
- #Criação da Arvore e implementação da Busca
+ # Cria uma árvore binária de pesquisa.
 raiz = NodoArvore(40)
 for chave in [20, 60, 50, 70, 10, 30]:
     nodo = NodoArvore(chave)
     insere(raiz, nodo)
-    
-# Imprime o caminhamento em ordem da árvore.
-em_ordem(raiz)
+
 # Procura por valores na árvore.
 for chave in [-50, 10, 30, 70, 100]:
     resultado = busca(raiz, chave)
